@@ -41,9 +41,9 @@ function CounterWithEffects() {
 
   return (
     <>
-        <div className="h-[80vh] w-[80vw] bg-[#0247ff] rounded-[50px] text-[#F5F1DC] text-ellipsis">
-            <div className="flex flex-col gap-4 items-center justify-center text-ellipsis">
-                <h1 className="text-center text-[200px] font-bold">Count: {count}</h1>
+        <div className="flex items-center justify-center min-h-screen bg-[#FF8040] p-4">
+            <div className=" w-full max-w-4xl min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] bg-[#0247ff] rounded-2xl md:rounded-[50px] flex flex-col gap-4 items-center justify-center text-ellipsis">
+                <h1 className="text-center text-[80px] md:text-[150px] lg:text-[200px] xlfont-bold">Count: {count}</h1>
                 {!auto ? (
                     <div className="flex gap-4 justify-center">
                         <button className="bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC] cursor-pointer shadow-xl" onClick={handleIncrement}>Increment</button>
