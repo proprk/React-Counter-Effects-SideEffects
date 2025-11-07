@@ -46,21 +46,21 @@ function CounterWithEffects() {
                 <h1 className="text-center text-[200px] font-bold">Count: {count}</h1>
                 {!auto ? (
                     <div className="flex gap-4 justify-center">
-                        <button className="bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC]  cursor-pointer" onClick={handleIncrement}>Increment</button>
-                        <button className="bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC]  cursor-pointer" onClick={handleDecrement}>Decrement</button>
-                        <button className="bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC]  cursor-pointer" onClick={handleReset}><RiResetLeftFill /></button>
+                        <button className="bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC] cursor-pointer shadow-xl" onClick={handleIncrement}>Increment</button>
+                        <button className="bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC]  cursor-pointer shadow-xl" onClick={handleDecrement}>Decrement</button>
+                        <button className="bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC]  cursor-pointer shadow-xl" onClick={handleReset}><RiResetLeftFill /></button>
                     </div>  
                 ) : (
                     <div className="flex flex gap-4 justify-center items-center">
                         <p className="text-xl font-semibold">Auto Counting...</p>
-                        <button className="bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC]  cursor-pointer" onClick={handleReset}><RiResetLeftFill /></button>
+                        <button className="bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC]  cursor-pointer shadow-xl" onClick={handleReset}><RiResetLeftFill /></button>
                     </div>  
                 )}
 
                 <p className="mb-[-12px]">Toggle Counter Type:</p>
 
                 <button 
-                    className='bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC] cursor-pointer' 
+                    className='bg-orange-500 px-4 py-2 rounded-lg text-[#F5F1DC] cursor-pointer shadow-xl' 
                     onClick={toggleAuto}
                     >
                         {auto ? "Stop Auto" : "Start Auto"}
